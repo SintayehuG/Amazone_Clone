@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { DataContext } from "../DataProvider/DataProvider";
 import { Type } from "../../Utility/action.type";
 import CurrencyFormat from "../CurrencyFormat/CurrencyFormat";
-import Rating from "../../Pages/Rating/Rating";
+import Rating from "../../pages/Rating/Rating";
 
 function ProductCard({ product, flex, renderDesc, renderAdd, amount }) {
   if (!product || !product.image) {
