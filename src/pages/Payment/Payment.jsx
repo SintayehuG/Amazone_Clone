@@ -1,7 +1,7 @@
 
 import React, { useContext, useState } from "react";
 import classes from "./Payment.module.css";
-import Layout from "../../Components/Layout/Layout";
+import LayOut from "../../Components/LayOut/LayOut";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
 import ProductCard from "../../Components/Product/ProductCard";
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
@@ -76,7 +76,7 @@ function Payment() {
   };
 
   return (
-    <Layout>
+    <LayOut>
       <section className={classes.payment}>
         <div className={classes.payment_container}>
           <h2>
@@ -146,7 +146,7 @@ function Payment() {
           </div>
         </div>
       </section>
-    </Layout>
+    </LayOut>
   );
 }
 

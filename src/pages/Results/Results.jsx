@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Results.module.css";
-import Layout from "../../Components/Layout/Layout";
+import LayOut from "../../Components/LayOut/LayOut";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { productUrl } from "../../Api/endPoints";
@@ -27,7 +27,7 @@ function Results() {
   }, [categoryName]); // Include categoryName as a dependency for the useEffect hook
 
   return (
-    <Layout>
+    <LayOut>
       <section>
         <h1 style={{ padding: "30px" }}>Results</h1>
         <p style={{ padding: "38px" }}>Category / {categoryName}</p>
@@ -47,7 +47,7 @@ function Results() {
           </div>
         )}
       </section>
-    </Layout>
+    </LayOut>
   );
 }
 

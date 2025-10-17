@@ -1,6 +1,6 @@
 
 import React, { useContext } from "react";
-import Layout from "../../Components/Layout/Layout";
+import LayOut from "../../Components/LayOut/LayOut";
 import ProductCard from "../../Components/Product/ProductCard";
 import { Link } from "react-router-dom";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
@@ -31,7 +31,7 @@ function Cart() {
   };
 
   return (
-    <Layout>
+    <LayOut>
       <section className={classes.container}>
         <div className={classes.cart_container}>
           <h2>Hello</h2>
@@ -82,7 +82,7 @@ function Cart() {
           </div>
         )}
       </section>
-    </Layout>
+    </LayOut>
   );
 }
 
