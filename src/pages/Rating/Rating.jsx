@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './Rating.module.css'
+import classes from "./Rating.module.css"
 
 const Rating = ({ value }) => {
   const stars = Array.from({ length: 5 }, (_, index) => (
