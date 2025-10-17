@@ -6,7 +6,7 @@ import classes from "./Product.module.css";
 import Loader from "../../Components/Loader/Loader.jsx";
 
 function Product() {
-  const [products, setProducts] = useState([]); // start with empty array
+  const [products, setProducts] = useState([]); 
 const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
