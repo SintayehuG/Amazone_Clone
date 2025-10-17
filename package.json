@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "netlify deploy --prod"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "dependencies": {
     "@stripe/react-stripe-js": "^4.0.2",
